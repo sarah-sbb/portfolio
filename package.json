@@ -1,0 +1,20 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "This my portoflio website which show my works",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass src/scss/style.scss src/css/style.css --watch"
+  },
+  "keywords": [
+    "portoflio",
+    "mobile",
+    "responsive",
+    "design"
+  ],
+  "author": "Sarah Basset",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0"
+  }
+}
