@@ -1,0 +1,44 @@
+// Import Google Fonts
+@import "https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900&display=swap";
+
+// Import Google Icons 
+// Menu icon
+@import "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu";
+@import "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close";
+// Flèche droite
+@import "https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=chevron_right";
+// <span class="material-symbols-outlined">chevron_right</span>
+
+
+// Couleurs
+$color-primary: #115E5B;
+$color-secondary: #F2F5FB;
+$color-tertiary: #9DCCCA;
+$color-text: #63553f;
+$color-background: #faf5ed;
+$color-dark: #000A0A;
+$color-light: #f8f9fa;
+$color-footer-bg: #131516;
+$color-overlay: rgba(0, 26, 25, 0.395);
+$linear-gradient: linear-gradient(90deg, $color-primary, $color-tertiary, $color-primary);
+
+// Polices
+$font-primary: "Noto Serif Display", serif;
+$font-secondary: "Raleway", sans-serif;
+
+// Tailles
+$font-size-base: 1em;
+$font-size-large: 1.5em;
+$font-size-extra-large: 5em;
+$font-weight-bold: 700;
+$font-weight-normal: 400;
+
+// Espacements
+$spacing-small: 13px;
+$spacing-medium: 25px;
+$spacing-large: 50px;
+$spacing-extra-large: 100px;
+
+// Autres
+$transition-duration: 0.3s;
+$transition-ease: ease;

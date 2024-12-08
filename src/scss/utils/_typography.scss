@@ -1,0 +1,42 @@
+// Styles de typographie globaux
+body {
+    font-family: $font-secondary;
+    font-size: $font-size-base;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-primary;
+    font-weight: $font-weight-bold;
+}
+
+p, .subtitle {
+    font-family: $font-secondary;
+    font-weight: $font-weight-normal;
+}
+
+h1, h2 {
+    font-size: $font-size-extra-large;
+    background: linear-gradient(90deg, $color-primary, $color-secondary, $color-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+    background-clip: text;
+    text-fill-color: rgba(0, 0, 0, 0);
+}
+
+h3, h4, h5, h6, .number {
+    color: $color-text;
+    font-family: $font-primary;
+    font-size: $font-size-large;
+    font-weight: $font-weight-bold;
+}
+
+a {
+    text-decoration: none;
+}
+
+// Styles spécifiques pour les titres de section
+.section-title {
+    margin-bottom: $spacing-large;
+    height: 100px;
+}

@@ -1,0 +1,63 @@
+.navbar {
+    color: white;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+
+    .nav__logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        p {
+            font-family: $font-primary;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+        }
+        .barre-oblique {
+            width:2px;
+            height:70px;
+            background-color:#fff;
+            transform:rotate(15deg);
+            margin:0 5px;
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+        ul > li {
+            font-family: $font-secondary;
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+        }
+    }
+
+    .nav__menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+        font-size: 1.5em;
+        cursor: pointer;
+        float: right;
+    }
+
+    @media screen and (min-width: 981px) {
+        .nav__menu {
+            display: flex;
+            gap : 20px;
+            
+            a {
+                color: white;
+                font-family: $font-primary;
+                text-transform: uppercase;
+            }
+        }
+        .menu-icon {
+            display: none;
+        }        
+    }
+
+}

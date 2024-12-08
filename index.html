@@ -1,52 +1,127 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="/src/css/style.css">
     </head>
     <body>
-        <header>
-            <nav>
-                <div class="nav__logo">logo</div>
-                <ul class="nav__menu">
-                    <li class="nav__menu-item"><a href="" class="nav__menu-link">A propos</a></li>
-                    <li class="nav__menu-item"><a href="" class="nav__menu-link">Mes projets</a></li>
-                    <li class="nav__menu-item"><a href="" class="nav__menu-link">Mes compétences</a></li>
-                    <li class="nav__menu-item"><a href="" class="nav__menu-link">Mon expériences</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section class="section-default">
-                <div class="section__content">
-                    <h2>Mes projets</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos.</p>
+        <header id="header">
+            <div class="header-container">
+                <nav class="navbar">
+                    <div class="nav__logo">
+                        <p>Sarah <br>Basset</p>
+                        <span class="barre-oblique"></span>
+                        <ul class="slogan">
+                            <li class="slogan-item">Web</li>
+                            <li class="slogan-item">Graphisme</li>
+                            <li class="slogan-item">Communication</li>
+                        </ul>
+                    </div>
+                    <!-- Menu -->
+                    <ul id="navMenu" class="nav__menu">
+                        <li class="nav__menu-item"><a href="#" class="nav__menu-link">À propos</a></li>
+                        <li class="nav__menu-item"><a href="#" class="nav__menu-link">Mes projets</a></li>
+                        <li class="nav__menu-item"><a href="#" class="nav__menu-link">Mes compétences</a></li>
+                        <li class="nav__menu-item"><a href="#" class="nav__menu-link">Mon expérience</a></li>
+                    </ul>
+                    <span id="openBtn" class="material-symbols-outlined menu-icon">menu</span>  
+                </nav>
+                <div class="header__banner">
+                    <h1 class="header-content__title">Développeuse <br>web et mobile</h1>
                 </div>
-                <div class="section__card"></div>
+                <div class="header__cta">
+                    <p>Derniers projets</p>
+                </div>
+            </div>
+        </header>
+
+<!-- Content -->     
+        <main class="main">
+            <section class="section-primary section-project">
+                <div class="card-primary">
+                    <img src="/src/img/banner.webp" alt="" />
+                    <div class="card-content">
+                        <h3 class="card-title">Titre h3</h3>
+                    </div>
+                </div>
+                <div class="card-primary">
+                    <img src="/src/img/banner.webp" alt="" />
+                    <div class="card-content">
+                        <h3 class="card-title">Titre h3</h3>
+                    </div>
+                </div>
+                <div class="card-primary">
+                    <img src="/src/img/banner.webp" alt="" />
+                    <div class="card-content">
+                        <h3 class="card-title">Titre h3</h3>
+                    </div>
+                </div>
             </section>
             <section class="section-default">
                 <div class="section__content">
                     <h2>A propos</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
-                <div class="section__card"></div>
+                <div class="section__card">
+                    <div class="card-secondary">
+                        <h3>Titre</h3>
+                        <p>lorem ispum</p>
+                    </div>
+                    <div class="card-secondary">
+                        <h3>Titre</h3>
+                        <p>lorem ispum</p>
+                    </div>
+                    <div class="card-secondary">
+                        <h3>Titre</h3>
+                        <p>lorem ispum</p>
+                    </div>
+                    <div class="card-secondary">
+                        <h3>Titre</h3>
+                        <p>lorem ispum</p>
+                    </div>
+                </div>
             </section>
+            <span style="height: 100px; background-color: blue;">test</span>
             <section class="section-default">
                 <div class="section__content">
                     <h2>Mes compétences</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
-                <div class="section__card"></div>
+                <div class="section__card">
+                    <p>video.mp4</p>
+                    <div class="progressbar-wrapper">
+                     <div title="downloaded" class="progressbar mp4">100%</div>
+                    </div>
+               
+                    <p>musique.mp3</p>
+                    <div class="progressbar-wrapper">
+                     <div title="downloading" class="progressbar mp3">60%</div>
+                    </div>
+                </div>
             </section>
-            <section class="section-default">
+            <section class="section-primary">
                 <div class="section__content">
                     <h2>Mon expériences</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
-                <div class="section__card"></div>
+                <div class="section__card">
+
+                </div>
             </section>
         </main>
-        <footer>
-
+        <footer class="footer">
+                <div class="footer__contact">
+                    <h3>Contact</h3>
+                    <p>Text</p>
+                </div>
+                <div class="footer__contact">
+                    <h3>Contact</h3>
+                    <p>Text</p>
+                </div>
+                <div class="footer__contact">
+                    <h3>Contact</h3>
+                    <p>Text</p>
+                </div>
         </footer>
+        <script src="/src/js/app.js"></script>
     </body>
 </html>

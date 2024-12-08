@@ -1,0 +1,30 @@
+.card-primary {
+    img {
+        position: relative;
+        object-fit: cover;
+        width: 100%;
+    }
+    .card-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        h3 {
+            font-size: 45px;
+            @media screen and(min-width: 981px) {
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+.card-secondary {
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    background-color: $color-background;
+    width: 337px;
+    height: 300px;
+}

@@ -1,0 +1,21 @@
+// Import des utilitaires
+@import 'utils/variables';
+@import 'utils/typography';
+@import 'utils/mixins';
+
+// Import des fichiers de base
+@import 'base/reset';
+@import 'base/base';
+@import 'base/grid';
+
+// Import des composants
+@import 'components/header';
+@import 'components/navigation';
+@import 'components/section';
+@import 'components/footer';
+@import 'components/buttons';
+@import 'components/cards';
+
+// Import des layouts
+@import 'layout/home';
+@import 'layout/page';

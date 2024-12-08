@@ -1,0 +1,35 @@
+#header {
+    background-image: url("/src/img/banner.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    padding: 40px 40px 0 40px;
+    height: 90vh;
+
+    .header-container {
+        display: grid;
+        grid-template-rows: 1fr 2fr 1fr;
+        background-color: $color-overlay;
+        height: 100%;
+
+        .header__banner {
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+            font-size: 5.5em;
+        }
+
+        .header__cta {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: 2em;
+            color: white;
+
+            p {
+                font-size: $font-primary;
+            }
+        }
+    }
+}

@@ -4,7 +4,7 @@
   "description": "This my portoflio website which show my works",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass src/scss/style.scss src/css/style.css --watch"
+    "sass": "node-sass --watch src/scss/style.scss src/css/style.css --style compressed"
   },
   "keywords": [
     "portoflio",
