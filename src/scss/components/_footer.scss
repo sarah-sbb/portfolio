@@ -3,6 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 40px;
     background-color: $color-dark;
     height: 30vh;
@@ -11,6 +12,7 @@
     @media  screen and (min-width: 981px) {
         flex-direction: row;
         justify-content: space-between;
+        text-align: left;
         gap: 0;
         
     }

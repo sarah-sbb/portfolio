@@ -35,8 +35,13 @@ a {
     text-decoration: none;
 }
 
-// Styles spécifiques pour les titres de section
-.section-title {
-    margin-bottom: $spacing-large;
-    height: 100px;
+// Styles spécifiques pour les titres et paragraphe de section
+.section__content {
+    h2 {
+        font-size: 4em;
+    }
+
+    p {
+        font-size: 1.3em;
+    }
 }
