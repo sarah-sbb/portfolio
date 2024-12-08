@@ -132,15 +132,19 @@ table {
       height: 70px;
       background-color: #fff;
       transform: rotate(15deg);
-      margin: 0 5px; }
+      margin: 0 10px; }
       @media screen and (max-width: 768px) {
         .navbar .nav__logo .barre-oblique {
           display: none; } }
-    .navbar .nav__logo ul > li {
-      font-family: "Raleway", sans-serif; }
-      @media screen and (max-width: 768px) {
-        .navbar .nav__logo ul > li {
-          display: none; } }
+    .navbar .nav__logo ul {
+      display: flex;
+      flex-direction: column;
+      gap: 10px; }
+      .navbar .nav__logo ul li {
+        font-family: "Raleway", sans-serif; }
+        @media screen and (max-width: 768px) {
+          .navbar .nav__logo ul li {
+            display: none; } }
   .navbar .nav__menu {
     display: none; }
   .navbar .menu-icon {
