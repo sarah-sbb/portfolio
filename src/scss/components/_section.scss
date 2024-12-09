@@ -32,9 +32,16 @@
             grid-template-columns: repeat(2, 1fr); /* Deux colonnes sur grand écran */
         }
     }
+
+    .section__progressbar {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
 }
 
-.section-primary {
+.section__primary {
     padding: 0 40px;
     
     @media screen and (min-width: 981px) {

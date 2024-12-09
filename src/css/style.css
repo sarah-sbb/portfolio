@@ -200,16 +200,25 @@ table {
       .section-default .section__card {
         grid-template-columns: repeat(2, 1fr);
         /* Deux colonnes sur grand écran */ } }
+  .section-default .section__progressbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px; }
 
-.section-primary {
+.section__primary {
   padding: 0 40px; }
   @media screen and (min-width: 981px) {
-    .section-primary {
+    .section__primary {
       margin-bottom: 100px; } }
   @media screen and (min-width: 981px) {
-    .section-primary {
+    .section__primary {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: auto; } }
+
+.progressbar-item {
+  display: flex;
+  gap: 10px; }
 
 .footer {
   display: flex;
