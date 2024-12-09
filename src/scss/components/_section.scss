@@ -31,7 +31,6 @@
 
 .section-primary {
     display: grid;
-    gap: 30px;
     padding: 0 80px;
     margin-bottom: $spacing-extra-large;
     
@@ -39,6 +38,34 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: auto;
     }
+}
+
+.section-project {
+
+    .section__card {  
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+        grid-auto-flow: row;
+        justify-content: center;
+        align-content: center;
+        justify-items: center;
+        align-items: center;
+        grid-template-areas:
+          "."
+          "."
+          "."
+          ".";
+
+          @media screen and (min-width: 981px) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+          ". ."
+          ". .";
+          }
+      }      
 }
 
 .section-secondary {
