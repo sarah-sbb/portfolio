@@ -8,6 +8,7 @@
     background-color: $color-dark;
     height: 30vh;
     padding: 40px;
+    box-sizing: border-box;
 
     @media  screen and (min-width: 981px) {
         flex-direction: row;
@@ -32,6 +33,17 @@
 
         @media  screen and (min-width: 981px) {
             font-size: 1.5em;
+        }
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        list-style: none;
+
+        li {
+            color: white;
         }
     }
 }

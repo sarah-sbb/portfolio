@@ -301,7 +301,8 @@ table {
   gap: 40px;
   background-color: #000A0A;
   height: 30vh;
-  padding: 40px; }
+  padding: 40px;
+  box-sizing: border-box; }
   @media screen and (min-width: 981px) {
     .footer {
       flex-direction: row;
@@ -321,6 +322,13 @@ table {
     @media screen and (min-width: 981px) {
       .footer p {
         font-size: 1.5em; } }
+  .footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    list-style: none; }
+    .footer ul li {
+      color: white; }
 
 .card-primary {
   display: flex;
