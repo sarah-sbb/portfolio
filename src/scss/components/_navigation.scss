@@ -28,7 +28,7 @@
         ul {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 5px;
             li {
                 font-family: $font-secondary;
                 @media screen and (max-width: 768px) {
