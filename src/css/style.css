@@ -81,8 +81,22 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.main {
-  padding: 0 40px; }
+.main-container {
+  padding: 0 40px;
+  margin-bottom: 100px; }
+  .main-container .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 150px;
+    grid-auto-flow: row;
+    grid-template-areas: "section-intro" "section-skills" "section-experience"; }
+  .main-container .section-intro {
+    grid-area: section-intro; }
+  .main-container .section-skills {
+    grid-area: section-skills; }
+  .main-container .section-experience {
+    grid-area: section-experience; }
 
 #header {
   background-image: url("/src/img/banner.webp");
@@ -171,7 +185,7 @@ table {
 .section-default {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 0.5fr 1.5fr;
   text-align: center; }
   @media screen and (min-width: 981px) {
     .section-default {
@@ -185,6 +199,9 @@ table {
     align-items: center;
     justify-content: center;
     gap: 20px; }
+    @media screen and (min-width: 981px) {
+      .section-default .section__content {
+        align-items: flex-start; } }
   .section-default .section__card {
     display: grid;
     /* Grille pour les cartes */
@@ -216,9 +233,67 @@ table {
       grid-template-columns: repeat(3, 1fr);
       grid-template-rows: auto; } }
 
-.progressbar-item {
-  display: flex;
-  gap: 10px; }
+.section__secondary {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5 1.5fr; }
+  .section__secondary .section__content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    margin-bottom: 70px; }
+  .section__secondary .section__card ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    flex-wrap: wrap; }
+    @media screen and (min-width: 981px) {
+      .section__secondary .section__card ul {
+        flex-direction: row; } }
+    .section__secondary .section__card ul li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 10px; }
+      .section__secondary .section__card ul li p {
+        font-weight: bold; }
+      .section__secondary .section__card ul li span {
+        font-style: italic; }
+      .section__secondary .section__card ul li img {
+        width: 180px; }
+
+.progressbar-wrapper {
+  background-color: #dfe6e9;
+  color: white;
+  border-radius: 15px;
+  width: 100%; }
+
+.progressbar {
+  background-color: #faf5ed;
+  color: white;
+  padding: 0.7rem;
+  text-align: right;
+  font-size: 20px;
+  border-radius: 15px; }
+
+.progressbar[title="downloading"] {
+  background-color: var(--progress); }
+
+.progressbar[title="downloaded"] {
+  background-color: #115E5B; }
+
+.hight {
+  width: 70%; }
+
+.middle {
+  width: 50%; }
+
+.down {
+  width: 30%; }
 
 .footer {
   display: flex;
